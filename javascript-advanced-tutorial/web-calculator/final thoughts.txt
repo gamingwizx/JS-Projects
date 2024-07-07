@@ -1,0 +1,13 @@
+1) You can add the elements in the class, and then modify the elements within the class
+2) You can set the elements to be private, and when you declare the private variables, you do not neeed to declare anything below it
+3) you can actually split the numbers everytime, then check if the decimal place exist. if exist, then you add, if not, then
+dont add, and this can be done by using the .
+4) to clean the code, you could pass the digit into a set function, and you then process the digit adding in the display in set function
+5) when checking for null value from parameters, do parameter?.test
+6) i realized that my way of doing is that, i keep repeating the same implementation of certain functions for exmaple,
+setting the dataset in elements, setting the display value in the elements
+7) instead of resetting the primary and secondary display over and over again, with a buunch of implementation, call the clear
+function that clears the display, and just set the answer in it
+and within the clear function, set the value with theh value, and the logic for setting the value in the display is implemented
+within the set function
+ 

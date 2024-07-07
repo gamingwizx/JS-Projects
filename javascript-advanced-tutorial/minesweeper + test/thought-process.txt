@@ -1,0 +1,25 @@
+things to do:
+1) load up the mines by randomizing the position of mines on the board
+2) when click, it will reveal the state of the mine, mine, safe, number of nearby mines
+3) click all the safed blocks are cleared, display a message called you win
+4) if a mine is detonated, display a message called you lose
+
+the flow technically
+-- load up the mines by randomizing the position of mines on the board
+1) find out the number of mines
+2) find out the size of the board, the dimensions
+3) randomize the position of mines in the board
+
+1) load the blocks into the minesweeper
+
+-- when click, it will reveal the state of the mine, mine, safe, number of nearby mines
+1) each block has an eventlistener linked to it
+2) when clicked, get the position of the block, using the position, check with the position of the mine
+    1) if it matches, then return a game over = true, and check if game over with a function.
+        1) if gameover, show all tiles, (including the mines and the blocks without mines)
+    2) if it doesn't match, check for nearby mines, within the the 1 block area
+        1) add up all the mines within the area, and display it onto the block
+        2) find out nearby linking blocks that are not mines, then open them up as well
+
+-- click all the safed blocks are cleared, display a message called you win
+3) if there are no more unopened non-mine blocks, display, you win the game.

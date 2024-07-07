@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Typescript Date Picker</title>
+  <link rel="stylesheet" href="src/style.css">
+  <script type="module" src="/src/main.ts"></script>
+</head>
+<body>
+  <div class="date-picker-container">
+    <button class="date-picker-button" data-date-picker-toggle>October 26th, 2020</button>
+    <div class="date-picker hide" data-date-picker>
+      <div class="date-picker-header">
+        <button class="prev-month-button month-button" data-prev-month-button>&larr;</button>
+        <div class="current-month"><button class="selector-button" data-display-month>October</button> -
+          <button class="selector-button" data-display-year>2020</button>
+        </div>
+        <button class="next-month-button month-button" data-next-month-button>&rarr;</button>
+      </div>
+      <div class="month-selection-grid hide" data-month-selection-grid>
+        <button class="month-selector-button selector-button" data-month-selector-button data-month="0">Jan</button>
+        <button class="month-selector-button selector-button" data-month-selector-button data-month="1">Feb</button>
+        <button class="month-selector-button selector-button" data-month-selector-button data-month="2">Mar</button>
+        <button class="month-selector-button selector-button" data-month-selector-button data-month="3">Apr</button>
+        <button class="month-selector-button selector-button" data-month-selector-button data-month="4">May</button>
+        <button class="month-selector-button selector-button" data-month-selector-button data-month="5">Jun</button>
+        <button class="month-selector-button selector-button" data-month-selector-button data-month="6">Jul</button>
+        <button class="month-selector-button selector-button" data-month-selector-button data-month="7">Aug</button>
+        <button class="month-selector-button selector-button" data-month-selector-button data-month="8">Sep</button>
+        <button class="month-selector-button selector-button" data-month-selector-button data-month="9">Oct</button>
+        <button class="month-selector-button selector-button" data-month-selector-button data-month="10">Nov</button>
+        <button class="month-selector-button selector-button" data-month-selector-button data-month="11">Dec</button>
+      </div>
+      <div class="year-selector hide" data-year-selector data-start-year="1900" data-end-year="2100"></div>
+      <div class="date-picker-grid-header date-picker-grid" data-date-picker-grid-header>
+        <div>Sun</div>
+        <div>Mon</div>
+        <div>Tue</div>
+        <div>Wed</div>
+        <div>Thu</div>
+        <div>Fri</div>
+        <div>Sat</div>
+      </div>
+      <div class="date-picker-grid-dates date-picker-grid" data-date-picker-date-grid>
+        <button class="date date-picker-other-month-date">27</button>
+        <button class="date date-picker-other-month-date">28</button>
+        <button class="date date-picker-other-month-date">29</button>
+        <button class="date date-picker-other-month-date">30</button>
+        <button class="date">1</button>
+        <button class="date">2</button>
+        <button class="date">3</button>
+        <button class="date">4</button>
+        <button class="date">5</button>
+        <button class="date">6</button>
+        <button class="date">7</button>
+        <button class="date">8</button>
+        <button class="date">9</button>
+        <button class="date">10</button>
+        <button class="date">11</button>
+        <button class="date">12</button>
+        <button class="date">13</button>
+        <button class="date">14</button>
+        <button class="date">15</button>
+        <button class="date">16</button>
+        <button class="date">17</button>
+        <button class="date">18</button>
+        <button class="date">19</button>
+        <button class="date">20</button>
+        <button class="date">21</button>
+        <button class="date">22</button>
+        <button class="date">23</button>
+        <button class="date">24</button>
+        <button class="date">25</button>
+        <button class="date selected">26</button>
+        <button class="date">27</button>
+        <button class="date">28</button>
+        <button class="date">29</button>
+        <button class="date">30</button>
+        <button class="date">31</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

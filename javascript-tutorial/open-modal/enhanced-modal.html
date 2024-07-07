@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="./enhanced-modal.js"></script>
+    <style>
+      #modal {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0px;
+        height: 25%;
+        width: 25%;
+        border: black solid 1px;
+        display: none;
+      }
+      #overlay {
+        background-color: grey;
+        margin: 0px;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        opacity: 0.3;
+        display: none;
+      }
+      #modal.open {
+        display: block;
+      }
+      #overlay.open {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="overlay"></div>
+
+    <div id="modal" class="open">
+      <span> Hello, this is a modal </span>
+      <button id="close-modal">Close</button>
+    </div>
+
+    <button id="open-modal">Open modal</button>
+  </body>
+</html>
